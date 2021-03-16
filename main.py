@@ -80,9 +80,9 @@ button_0 = Button(root, text=str(zero_button_value), padx=87, pady=20,
 button_equal = Button(root, text='=', padx=40, pady=20, command=button_equal).grid(row=5, column=2)
 
 button_add = Button(root, text='+', padx=38, pady=20, command=button_add).grid(row=2, column=4)
-button_clear = Button(root, text='CE', padx=40, pady=20, command=button_clear).grid(row=6, column=4)
+button_clear = Button(root, text='CE', padx=36, pady=20, command=button_clear).grid(row=6, column=4)
 button_subtract = Button(root, text='-', padx=40, pady=20, command=button_subtract).grid(row=3, column=4)
 button_multiply = Button(root, text='*', padx=40, pady=20, command=button_multiply).grid(row=5, column=4)
-button_divide = Button(root, text='/', padx=41, pady=20, command=button_divide).grid(row=1, column=4)
+button_divide = Button(root, text='/', padx=40, pady=20, command=button_divide).grid(row=1, column=4)
 
 mainloop()
