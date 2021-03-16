@@ -1,5 +1,5 @@
 from tkinter import *
-from buttons import Buttons
+from button import My_button
 
 numbers = [(7, 8, 9), (4, 5, 6), (1, 2, 3)]
 
@@ -66,13 +66,13 @@ def button_divide():
 for row in range(1, 4):
     for column in range(0, 3):
         button_value = numbers[row - 1][column]
-        calc_button = Buttons(button_value, entry_box)
+        calc_button = My_button(button_value, entry_box)
         Button(root, text=calc_button.text(), padx=40, pady=20,
                command=calc_button.click_button).grid(row=row, column=column)
 
 # zero button
 zero_button_value = 0
-zero_button = Buttons(zero_button_value, entry_box)
+zero_button = My_button(zero_button_value, entry_box)
 button_0 = Button(root, text=str(zero_button_value), padx=87, pady=20,
                   command=zero_button.click_button).grid(row=5, column=0, columnspan=2)
 

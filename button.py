@@ -1,7 +1,7 @@
 from tkinter import END
 
 
-class Buttons:
+class My_button:
     def __init__(self, value, entry_box):
         self.value = value
         self.entry_box = entry_box
